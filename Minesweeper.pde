@@ -9,7 +9,7 @@ private ArrayList <MSButton> mines = new ArrayList <MSButton> (); //ArrayList of
 void setup ()
 {
     size(400, 400);
-    textAlign(RIGHT,CENTER);
+    textAlign(CENTER,CENTER);
     
     // make the manager
     Interactive.make( this );
@@ -119,7 +119,7 @@ public class MSButton
             displayWinningMessage(); 
           }
           else if (countMines(this.myRow, this.myCol) > 0)
-            myLabel = String.valueOf(countMines(this.myRow, this.myCol));
+            myLabel = "" + countMines(this.myRow, this.myCol);
           else {
             for (int i = -1; i < 2; i++){
               for (int j = -1; j < 2; j++){
@@ -143,7 +143,7 @@ public class MSButton
             fill( 100 );
         rect(x, y, width, height);
         fill(0);
-        text(myLabel, x+width/2, y+height/2);
+        text(myLabel,x+width/2,y+height/2);
     }
     public void setLabel(String newLabel)
     {
@@ -151,7 +151,7 @@ public class MSButton
     }
     public void setLabel(int newLabel)
     {
-        myLabel = String.valueOf(newLabel);
+        myLabel = "" + newLabel;
     }
     public boolean isFlagged()
     {
