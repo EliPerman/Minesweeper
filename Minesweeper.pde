@@ -143,7 +143,7 @@ public class MSButton
             fill( 100 );
         rect(x, y, width, height);
         fill(0);
-        text(myLabel,x+width/2,y+height/2);
+        text("1",x+width/2,y+height/2);
     }
     public void setLabel(String newLabel)
     {
