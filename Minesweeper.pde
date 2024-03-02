@@ -111,7 +111,7 @@ public class MSButton
           flagged = !flagged;
           if (flagged == false);
         }
-        else{
+        else {
           clicked = true;
           if (mines.contains(this))
             displayLosingMessage();
@@ -141,7 +141,6 @@ public class MSButton
             fill( 200 );
         else 
             fill( 100 );
-
         rect(x, y, width, height);
         fill(0);
         text(myLabel,x+width/2,y+height/2);
@@ -152,7 +151,7 @@ public class MSButton
     }
     public void setLabel(int newLabel)
     {
-        myLabel = ""+ newLabel;
+        myLabel = String.valueOf(newLabel);
     }
     public boolean isFlagged()
     {
