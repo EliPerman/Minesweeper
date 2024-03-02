@@ -9,7 +9,7 @@ private ArrayList <MSButton> mines = new ArrayList <MSButton> (); //ArrayList of
 void setup ()
 {
     size(400, 400);
-    textAlign(CENTER,CENTER);
+    textAlign(LEFT,CENTER);
     
     // make the manager
     Interactive.make( this );
